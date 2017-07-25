@@ -6,5 +6,6 @@
 
 # Variable Importance Plots
 - They have been produced in html via Plotly, please clone the repository and open the html files to see them. They unfortunately cannot be displayed in the notebook on github
-
-
+- Alternatively, please visit:
+  - https://plot.ly/~LeonardoPetrini/1 (casual)
+  - https://plot.ly/~LeonardoPetrini/3 (registered)
