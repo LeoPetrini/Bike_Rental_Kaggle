@@ -5,4 +5,4 @@
 - "xgb_lgb.csv": the solution produced in the kaggle format.
 
 # Variable Importance Plots
-- They have been produced in thml via Plotly, please clone the repository and open the html files to see them. They unfortunately cannot be displayed in the notebook on github
+- They have been produced in html via Plotly, please clone the repository and open the html files to see them. They unfortunately cannot be displayed in the notebook on github
