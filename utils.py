@@ -352,19 +352,24 @@ def lgb_predict_test(tr, te, x_vars, params, r_ix, ca_ix, shift_ca=1, shift_reg=
     return y_pred_comb, gbm_ca, gbm_r
 
 
-def plot_varimp(imp):
+def plot_varimp(imp, title):
     top_vars = [x[0] for x in imp]
     top_scores = [x[1] for x in imp]
 
     layout = go.Layout(
-        title='Variable importance',
+        title=title,
         xaxis=dict(
             title='score'
         ),
         yaxis=dict(
-            title='variable'
-        )
-    )
+            title=''
+        ),
+        margin=dict(
+        l=120,
+        r=10,
+        t=140,
+        b=80    
+    ))
 
     data = [go.Bar(
             x=top_scores[::-1],
@@ -373,4 +378,5 @@ def plot_varimp(imp):
             )]
 
     fig = go.Figure(data=data, layout=layout)
-    py.offline.iplot(fig)
+    py.offline.iplot(fig)    
+    
